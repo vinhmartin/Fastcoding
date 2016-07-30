@@ -11,14 +11,13 @@
 	<meta name="keywords" content=" " />
 	<title>Project Responsive</title>
 	<link rel="stylesheet" href="css/responsiveslides.css">
-  	<link rel="stylesheet" href="css/themes.css">
+
   	<link rel="stylesheet" href="css/font-awesome.min.css">
   	<script src="http://maps.googleapis.com/maps/api/js"></script>
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  	<!-- bxSlider Javascript file -->
     <script src="js/jquery.bxslider.js"></script>
-    <!-- bxSlider CSS file -->
+
     <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/wow.min.js"></script>
@@ -29,12 +28,17 @@
 
     new WOW().init();
      $(document).ready(function(){
+     	$('.customer-voice .bx-viewport').click(function(){
+     		alert("Hello");
+     	});
+
   		$('.bxslider').bxSlider({
   			  slideWidth: 300,
               minSlides: 1,
               maxSlides: 3,
               slideMargin: 10,
-              auto: true
+              auto: true,
+              autoHover: true,
   		});
   		$('.slider1').bxSlider({
   			auto: true,
@@ -243,12 +247,12 @@
 					<!--JQUERY SLIDER-->
 					<div class=" wow fadeIn customer-voice-slider">
 						<ul class="bxslider">
-						    <li><img src="./img/slider1_1.jpg" title="ho"/></li>
-						    <li><img src="./img/slider1_2.jpg" title="si"/></li>
-						    <li><img src="./img/slider1_3.jpg" title="vinh"/></li>
-						    <li><img src="./img/slider1_4.jpg" title="vinh"/></li>
-						    <li><img src="./img/slider1_5.jpg" title="vinh"/></li>
-						    <li><img src="./img/slider1_6.jpg" title="vinh"/></li>
+						    <li><img src="./img/slider2_1.jpg" title="ho"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider2_2.jpg" title="si"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider2_3.jpg" title="vinh"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider2_4.jpg" title="vinh"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider2_5.jpg" title="vinh"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider2_6.jpg" title="vinh"/><div class="hover-mask"></div></li>
 					  	</ul>
 				  	</div>
 				<!--JQUERY SLIDER-->
@@ -331,8 +335,19 @@
 					<br>
 					<p>FASTCODINGのサービスには、WordPress・MovableTypeなどのCMS構築や</p>
 					<p>ECサイトに特化したパッケージ商品などもございます。</p>
-
-					<div class="our-service-item"></div>
+					<br>
+					<br>
+					<!--JQUERY SLIDER-->
+					<div class="wow fadeIn our-projects-slider">
+						<ul class="bxslider">
+						    <li><img src="./img/slider3_1.jpg" title="ho"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider3_2.jpg" title="si"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider3_3.jpg" title="vinh"/><div class="hover-mask"></div></li>
+						    <li><img src="./img/slider3_4.jpg" title="vinh"/><div class="hover-mask"></div></li>
+						
+					  	</ul>
+				  	</div>
+				<!--JQUERY SLIDER-->
 			</section>
 
 			<!-- COMPANY INFORMATION -->
@@ -416,5 +431,6 @@
 
 <script src="js/responsiveslides.min.js"></script>
 <script src="js/scripts.js"></script>
+
 </body>
 </html>

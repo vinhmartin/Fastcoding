@@ -393,7 +393,9 @@ box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.75);
 
 /*===== Responsive =====*/
 @media (max-width: 640px) {
-	
+	.our-projects .bx-wrapper{
+		width: 309px;
+	}
 	.project-feature {
 	    clear: left;
 		width: auto;
@@ -474,11 +476,23 @@ box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.75);
 .customer-voice-slider{
 	margin-top: 40px;
 }
+.customer-voice .bx-wrapper .hover-mask{
+	width: 280px;
+	height: 360px;
+	position: absolute;
+	top: 0px;
+}
+.customer-voice .bx-wrapper .hover-mask:hover{
+	background-image: url("../img/slider2_0.png");
+}
 
 /*===== Responsive =====*/
 @media (max-width: 640px) {
 	.customer-voice button{
 		font-size: 1.4em;
+	}
+	.customer-voice .bx-wrapper{
+		width: 309px;
 	}
 }
 /*===== HOW TO REQUEST =====*/
@@ -592,13 +606,22 @@ box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.75);
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-.our-service-item{
-	margin-top: 40px;
-	margin-bottom: 40px;
-	width: 1022px;
-	height: 282px;
-	background-image: url("../img/our-service.jpg");
+.our-service .bx-wrapper .hover-mask{
+	width: 280px;
+	height: 360px;
+	position: absolute;
+	top: 0px;
 }
+.our-service .bx-wrapper .hover-mask:hover{
+	background-image: url("../img/slider2_0.png");
+}
+
+@media (max-width: 640px) {
+	.our-service .bx-wrapper{
+		width: 309px;
+	}
+}
+
 /*===== COMPANY INFORMATION =====*/
 .company-information{
 	text-align: center;
@@ -713,6 +736,7 @@ footer{
 	width: 100%;
 	height: 50px;
 	text-align: center;
+	position: relative;
 }
 footer p{
 	padding-top: 17px;
@@ -722,17 +746,17 @@ footer .top-back{
 	background-image: url("../img/top-back.png");
 	height: 50px;
 	width: 50px;
-	position: fixed;
-	top: 800px;
-	left: 1187px;
+	position: absolute;
+	top: -34px;
+	left: 1435px;
 }
 @media (max-width: 640px) {
 	footer .top-back{
 	background-image: url("../img/top-back.png");
 	height: 50px;
 	width: 50px;
-	position: fixed;
-	top: 765px;
-	left: 360px;
+	position: absolute;
+	top: -34px;
+	left: 450px;
 }
 }
