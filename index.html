@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie9" lang="ja"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--><html lang="ja"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content=" " />
+	<meta name="keywords" content=" " />
+	<title>Project Responsive</title>
+	<link rel="stylesheet" href="css/responsiveslides.css">
+  	<link rel="stylesheet" href="css/themes.css">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/wow.min.js"></script>
+
+    <link rel="stylesheet" href="css/common.css" />
+
+    <script type="text/javascript">
+
+    new WOW().init();
+     $(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  			  slideWidth: 300,
+              minSlides: 1,
+              maxSlides: 3,
+              slideMargin: 10,
+              auto: true
+  		});
+  		$('.slider1').bxSlider({
+  			auto: true,
+  			controls: true,
+  			pager: false,
+  		});
+
+  		//responsive menu
+  		$(".main-header .menu-icon").click(function(){
+        	$(".main-header .menu-item").toggle();
+    	});
+
+    	//smooth scroll
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  	});
+			});
+    </script>
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="cleartype" content="on" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/IE9.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="container">
+<!-- ============================  HEADER  ==================================-->
+	<header id="0">
+		<div class="fix-menu wow bounceInDown">
+			<div class="header-link">
+				<div class="wrapper">
+					<div class="item">HTMLコーディング</div>
+					<div class="item" style="background-color: #2F557A;">WordPress構築</div>
+					<div class="item" style="background-color: #57BB9D;">jQuery構築</div>
+					<div class="item" style="background-color: #4E893A;">MovableType構築</div>
+					<div class="item" style="background-color: #EFBE1B;">ECサイト構築</div>
+					<div class="item" style="background-color: #1C1619;">LANGUAGE</div>
+				</div>
+			</div>
+			<div class="main-header">
+				<div class="wrapper">
+					<div class="nav-bar">
+						<div class="nav-item brand">FASTCODING <i class="menu-icon fa fa-bars" aria-hidden="true"></i>
+</div>
+					<div class="menu-item">
+						<a href="#1"><div class="nav-item">ABOUT</div></a>
+						<a href="#2"><div class="nav-item">SERVICE</div></a>
+						<a href="#3"><div class="nav-item">VOICE</div></a>
+						<a href="#4"><div class="nav-item">FAQ</div></a>
+						<a href="#5"><div class="nav-item">COMPANY</div></a>
+						<a href="#6"><div class="nav-item">CONTACT</div></a>
+						<a href="#7"><div class="nav-item">お見積り</div></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="wow bounceInLeft slider">
+			      <ul class="slider1">
+			        <li><img src="img/1.jpg"></li>
+			        <li><img src="img/2.jpg"></li>
+			        <li><img src="img/3.jpg"></li>
+			      </ul>
+
+			      <div class="header-hr"></div>
+			      <div class="header-new">
+				      <div class="wrapper">
+				      	<span style="color:red"><strong>NEW</strong></span>
+				      	<span>2016.01.14</span>
+				      	<span>WordPress制作サービス　FASTPRESSを開始しました。このテキストは仮の文章です。このテキストは仮の文…</span>
+				      </div>
+			      </div>
+			</div>
+	</header>
+
+	<!--=========================== MAIN CONTAINT ==============================-->
+	<div class="main">
+		<div class="wrapper">
+									<!-- ABOUT SECTION -->
+			<section class=" wow fadeIn about" id="1">
+				<h2>ABOUT FASTCODING</h2>
+				<p>FASTCODINGはHTMLコーディングを</p>
+				<p>『1ページ8,000円』という価格でサービス提供をしています。</p>
+				<br>
+				<p>『1ページ8,000円』という価格でサービス提供をしています。</p>
+				<p>不明瞭な料金設定や見積になかった追加料金などを請求されるケースが多々見受けられます。</p>
+				<br>
+				<p>そこで当社はご発注者様の利便性を追求した結果、</p>
+				<p>「8,000円」という明確な料金でコーディング代行サービスを提供しております。</p>
+				<br>
+
+				<br>
+			<br>
+			<div class="wow fadeInLeft about-feature">
+				<img src="img/f1.jpg">
+				<h3>基本料金/CSS代 一切不要</h3>
+				<p>基本料金やCSSの代金はページ料金の中</p>
+				<p>に含まれているため、別途いただく必要は</p>
+				<p>ありません。シンプルでわかりやすい価格</p>
+				<p>設定です。</p>
+			</div>
+			<div class="wow fadeInLeft about-feature">
+				<img src="img/f2.jpg">
+				<h3>jQuery, WordPress 標準対応</h3>
+				<p>HTMLコーディングだけでなく、jQuery</p>
+				<p>を使った動きのあるページ制作、Word</p>
+				<p>pressテーマ形式でのご納品も無料で対</p>
+				<p>応いたします。</p>
+			</div>
+			<div class="wow fadeInLeft about-feature">
+				<img src="img/f3.jpg">
+				<h3>SEO対策済みで納品</h3>
+				<p>SEOに強い「セマンティックコーディング</p>
+				<p>などのSEO対策を施した状態で納品致</p>
+				<p>しますので、納品後すぐに運用いただけま</p>
+				<p>す。</p>
+			</div>
+			<button class="wow fadeIn">FASTCODINGの特長<span>></span></button>
+			</section>
+
+										<!-- OUR PROJECTS SECTION -->
+			<section class="wow fadeInRight our-projects">
+			<div class="wrapper">
+				<h2>OUR PROJECTS</h2>
+				<p>2015年4月にサービスを開始してから、今までにご依頼を受けたお客様・プロジェクト数の合計です。</p>
+				<p>実際に制作させていただいたwebサイトもご紹介しますので参考にしてください。</p>
+				<br>
+				<div class="project-feature">
+					<div class="img1"></div>
+					<div class="text"><p>クライアント様</p><h2>9999<small>社</small></h2></div>
+				</div>
+				<div class="project-feature">
+					<div class="img2"></div>
+					<div class="text"><p>合計プロジェクト数</p><h2>9999<small>社</small></h2></div>
+				</div>
+				<div class="project-feature">
+					<div class="img3"></div>
+					<div class="text"><p>合計コーディング枚数</p><h2>9999<small>社</small></h2></div>
+				</div>
+
+
+				<!--JQUERY SLIDER-->
+					<div class="wow fadeIn our-projects-slider">
+						<ul class="bxslider">
+						    <li><img src="./img/slider1_1.jpg" title="ho"/></li>
+						    <li><img src="./img/slider1_2.jpg" title="si"/></li>
+						    <li><img src="./img/slider1_3.jpg" title="vinh"/></li>
+						    <li><img src="./img/slider1_4.jpg" title="vinh"/></li>
+						    <li><img src="./img/slider1_5.jpg" title="vinh"/></li>
+						    <li><img src="./img/slider1_6.jpg" title="vinh"/></li>
+					  	</ul>
+				  	</div>
+				<!--JQUERY SLIDER-->
+
+
+				<button class="wow fadeIn">制作実績をもっと見る<span>></span></button>
+			</div>
+			</section>
+			</div>
+
+										<!-- CONTACT SECTION -->
+			<section class="wow fadeIn contact-us" id="6">
+				<div class="wrapper">
+					<h2>CONTACT US</h2>
+					<p>FASTCODINGのサービスは、「基本料金」・「CSS作成費」、</p>
+					<p>更には「jQuery」・「WordPress導入」のオプション費用について一切料金がかかりません。</p>
+					<p>サービス料金は1ページ一律8,000円のシンプルな料金で提供いたします。</p>
+					<button class="wow fadeIn">制作実績をもっと見る<span>></span></button>
+					<button class="wow fadeIn">制作実績をもっと見る<span>></span></button>
+				</div>
+			</section>
+										<!-- CUSTOMER'S VOICE SECTION -->
+			<section class="wow fadeIn customer-voice" id="3">
+
+				<div class="wrapper">
+					<h2>CUSTOMER'S VOICE</h2>
+					<br>
+					<p>FASTCODINGのコーディング代行サービスをご利用くださったお客様にインタビューをしました。</p>
+					<p>コーディング代行・外注サービスをご利用いただく背景やなぜFASTCODINGを選んだのか？</p>
+					<br>
+					<p>FASTCODINGの担当者の対応や納品データについて等、お客様が気になる箇所をしっかりと</p>
+					<p>インタビューをさせていただきました。 お客様の生の声を、是非一度ご覧ください。</p>
+
+					<!--JQUERY SLIDER-->
+					<div class=" wow fadeIn customer-voice-slider">
+						<ul class="bxslider">
+						    <li><img src="./img/slider1_1.jpg" title="ho"/></li>
+						    <li><img src="./img/slider1_2.jpg" title="si"/></li>
+						    <li><img src="./img/slider1_3.jpg" title="vinh"/></li>
+						    <li><img src="./img/slider1_4.jpg" title="vinh"/></li>
+						    <li><img src="./img/slider1_5.jpg" title="vinh"/></li>
+						    <li><img src="./img/slider1_6.jpg" title="vinh"/></li>
+					  	</ul>
+				  	</div>
+				<!--JQUERY SLIDER-->
+
+					<button class="wow fadeIn">お客さまの声をもっと見る<span>></span></button>
+				</div>
+			</section>
+										<!-- HOW TO REQUEST -->
+			<section class=" wow fadeIn how-request" id="4">
+				<h2>HOW TO REQUEST</h2>
+				<br>
+				<p>ご依頼枚数とコーディングリソース状況によって変動がありますが、</p>
+				<p>最短5営業日で納品させていただきます。</p>
+				<p>お見積りフォームから問い合わせいただければ、詳細な納期をご連絡いたします。</p>
+				<br>
+				<p>他にも現場状況などにもよりますが、特急料金でのご依頼も承っております。</p>
+				<div class="wrapper">
+					<div class="wow fadeIn request-process">
+						<div class="process-text a">
+							<p>まずは、お気軽にお見積り</p>
+							<p>フォームよりご連絡くださ</p>
+							<p>い。スケジュールや金額を</p>
+							<p>お見積りのうえメールを返</p>
+							<p>信いたします。</p>
+						</div>
+						<div class="process-text b">
+							<p>デザインデータ(Photo</p>
+							<p>shop/Illustrator/</p>
+							<p>Fireworks)と当社フォー</p>
+							<p>マットのコーディング指示</p>
+							<p>書をご入稿いただきます。</p>
+						</div>
+						<div class="process-text c">
+							<p>FASTCODINGベトナム</p>
+							<p>オフィスでHTMLコーディ</p>
+							<p>ングを行ないます。</p>
+						</div>
+						<div class="process-text d">
+							<p>日本人ディレクターによる</p>
+							<p>厳正なチェックの後、当社</p>
+							<p>サーバにて見栄えをご確</p>
+							<p>認いただきます。</p>
+						</div>
+						<div class="process-text e">
+							<p>完成したHTMLファイル</p>
+							<p>をzip圧縮で納品いたしま</p>
+							<p>す。本番サーバへのアップ</p>
+							<p>ロードも承ることが可能で</p>
+							<p>す。</p>
+						</div>
+					</div>
+					<button>依頼方法を詳しく見る<span>></span></button>
+					<hr>
+					<br>
+					<br>
+					<br>
+					<p>1ページ8,000円で制作できるwebサイトのサンプルや</p>
+					<p>無料で追加できる動き(jQuery)のサンプルもご用意しました。</p>
+					<button class="a">サンプルサイトを見る<span>></span></button>
+					<button class="a">無料jQuery一覧を見る<span>></span></button>
+				</div>
+			</section>
+
+			<!-- CONTACT SECTION -->
+			<section class="wow fadeIn contact-us">
+				<div class="wrapper">
+					<h2>CONTACT US</h2>
+					<p>FASTCODINGのサービスは、「基本料金」・「CSS作成費」、</p>
+					<p>更には「jQuery」・「WordPress導入」のオプション費用について一切料金がかかりません。</p>
+					<p>サービス料金は1ページ一律8,000円のシンプルな料金で提供いたします。</p>
+					<button>お問い合せ<span>></span></button>
+					<button>無料お見積り<span>></span></button>
+				</div>
+			</section>
+
+			<!-- OUR SERVICE SECTION -->
+			<section class="wow fadeIn our-service" id="2">
+				<div class="wrapper">
+					<h2>OUR SERVICE</h2>
+					<br>
+					<p>FASTCODINGのサービスには、WordPress・MovableTypeなどのCMS構築や</p>
+					<p>ECサイトに特化したパッケージ商品などもございます。</p>
+
+					<div class="our-service-item"></div>
+			</section>
+
+			<!-- COMPANY INFORMATION -->
+			<section class="company-information">
+				<div class="wrapper">
+					<h2>COMPANY INFORMATION</h2>
+					<br>
+					<p>HTMLコーディングでお困りのこと・ご質問などいつでもご連絡ください。</p>
+
+						<div class="map-info map-info-border">
+							<h4>FASTCODING <span>東京オフィス</span></h4>
+							<div class="google-map">
+								<div class="my-googleMap">
+							    	<div id="googleMap1" style="width:350px;height:211px;"></div>
+							    </div>
+							</div>
+							<p><small>〒110-0015</small></p>
+							<p>東京都台東区東上野2-18-7 共同ビル3F</p>
+							<div class="cell"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+03-6262-5384</div>	
+						</div>
+					
+					<div class="map-info">
+						<h4>FASTCODING <span>東京オフィス</span></h4>
+						<div class="google-map">
+							<div class="my-googleMap">
+							    <div id="googleMap2" style="width:350px;height:211px;"></div>
+							</div>
+						</div>
+						<p><small>〒110-0015</small></p>
+						<p>東京都台東区東上野2-18-7 共同ビル3F</p>
+						<div class="cell"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+06-7878-8160</div>
+					</div>
+					<button>会社概要を詳しく見る<span>></span></button>
+
+					<div class="contact-info">
+						<div class="fast-coding">
+							<div class="icon"></div>
+							<br>
+							<br>
+						
+							<p>東京オフィス   〒110-0015　東京都台東区東上野2-18-7 共同ビル3F</p>
+							<p style="padding-left: 92px">03-6262-5384　info@fastcoding.jp</p>
+							<p>大阪オフィス  〒541-0044　大阪市中央区伏見町4-4-9 OX淀屋橋ビル3F</p>
+							<p style="padding-left: 92px">06-7878-8160　info@fastcoding.jp</p>
+						</div>
+						<div class="site-map">
+							<p><strong>SITE MAP</strong></p><br>
+							<div class="col1">
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>特長</p>
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>価格と納期</p>
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>納品までの流れ</p>
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>実績</p>
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>お客様の声</p>
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>よくある質問</p>
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>お問い合わせ</p>
+						<p><i class="fa fa-angle-right" aria-hidden="true"></i>お見積りフォーム</p>
+
+							</div>
+							<div class="col2">
+								<p><i class="fa fa-angle-right" aria-hidden="true"></i>会社概要</p>
+								<p><i class="fa fa-angle-right" aria-hidden="true"></i>私たちの理念</p>
+								<p><i class="fa fa-angle-right" aria-hidden="true"></i>大坂オフィスのご紹介</p>
+								<p><i class="fa fa-angle-right" aria-hidden="true"></i>新着情報</p>
+								<p><i class="fa fa-angle-right" aria-hidden="true"></i>利用規約</p>
+								<p><i class="fa fa-angle-right" aria-hidden="true"></i>プライバシーポリシー</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	</div>
+
+	<!--=========================== END MAIN CONTAINT ==============================-->
+	<footer>
+		<p>Copyright(C) 2016 FASTCODING,inc</p>
+		<a href="#0"><div class="top-back"></div></a>
+	</footer>
+</div>
+
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
