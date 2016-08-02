@@ -1,0 +1,28 @@
+{
+  "name": "vinh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinhmartin/Fastcoding.git"
+  },
+  "author": "vinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinhmartin/Fastcoding/issues"
+  },
+  "homepage": "https://github.com/vinhmartin/Fastcoding#readme"
+}
