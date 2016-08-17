@@ -11,7 +11,7 @@
 	<meta name="keywords" content=" " />
 	<title>Project Responsive</title>
 	<link rel="stylesheet" href="css/responsiveslides.css">
- 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
   	<link rel="stylesheet" href="css/font-awesome.min.css">
   	<script src="http://maps.googleapis.com/maps/api/js"></script>
 
@@ -86,20 +86,22 @@
 	<![endif]-->
 </head>
 <body>
-<div class="container">
 <!-- ============================  HEADER  ==================================-->
 	<header id="0">
 		<div class="fix-menu wow bounceInDown">
-			<div class="header-link">
-				<div class="wrapper">
-					<div class="item">HTMLコーディング</div>
-					<div class="item" style="background-color: #2F557A;">WordPress構築</div>
-					<div class="item" style="background-color: #57BB9D;">jQuery構築</div>
-					<div class="item" style="background-color: #4E893A;">MovableType構築</div>
-					<div class="item" style="background-color: #EFBE1B;">ECサイト構築</div>
-					<div class="item" style="background-color: #1C1619;">LANGUAGE</div>
-				</div>
+		<div class="container">
+			<div class="row">
+				<div class="header-link">
+					<div class="item col-md-2 col-sm-4" >HTMLコーディング</div>
+					<div class="item col-md-2 col-sm-4" style="background-color: #2F557A;">WordPress構築</div>
+					<div class="item col-md-2 col-sm-4" style="background-color: #57BB9D;">jQuery構築</div>
+					<div class="item col-md-2 col-sm-4" style="background-color: #4E893A;">MovableType構築</div>
+					<div class="item col-md-2 col-sm-4" style="background-color: #EFBE1B;">ECサイト構築</div>
+					<div class="item col-md-2 col-sm-4" style="background-color: #1C1619;">LANGUAGE</div>
 			</div>
+			</div>
+		</div>
+
 			<div class="main-header">
 				<div class="wrapper">
 					<div class="nav-bar">
@@ -135,68 +137,68 @@
 			      </div>
 			</div>
 	</header>
-
-	<!--=========================== MAIN CONTAINT ==============================-->
+	
+		<!--=========================== MAIN CONTAINT ==============================-->
 	<div class="main">
-		<div class="wrapper">
+		<div class="container">
+			<div class="row">
 									<!-- ABOUT SECTION -->
-			<section class=" wow fadeIn about" id="1">
-				<h2>ABOUT FASTCODING</h2>
-				<p>FASTCODINGはHTMLコーディングを</p>
-				<p>『1ページ8,000円』という価格でサービス提供をしています。</p>
-				<br>
-				<p>『1ページ8,000円』という価格でサービス提供をしています。</p>
-				<p>不明瞭な料金設定や見積になかった追加料金などを請求されるケースが多々見受けられます。</p>
-				<br>
-				<p>そこで当社はご発注者様の利便性を追求した結果、</p>
-				<p>「8,000円」という明確な料金でコーディング代行サービスを提供しております。</p>
-				<br>
+				<section class=" wow fadeIn about" id="1">
+					<h2>ABOUT FASTCODING</h2>
+					<p>FASTCODINGはHTMLコーディングを</p>
+					<p>『1ページ8,000円』という価格でサービス提供をしています。</p>
+					<br>
+					<p>『1ページ8,000円』という価格でサービス提供をしています。</p>
+					<p>不明瞭な料金設定や見積になかった追加料金などを請求されるケースが多々見受けられます。</p>
+					<br>
+					<p>そこで当社はご発注者様の利便性を追求した結果、</p>
+					<p>「8,000円」という明確な料金でコーディング代行サービスを提供しております。</p>
+					<br>
 
+					<br>
 				<br>
-			<br>
-			<div class="wow fadeInLeft about-feature">
-				<img src="img/f1.jpg">
-				<h3>基本料金/CSS代 一切不要</h3>
-				<p>基本料金やCSSの代金はページ料金の中</p>
-				<p>に含まれているため、別途いただく必要は</p>
-				<p>ありません。シンプルでわかりやすい価格</p>
-				<p>設定です。</p>
-			</div>
-			<div class="wow fadeInLeft about-feature">
-				<img src="img/f2.jpg">
-				<h3>jQuery, WordPress 標準対応</h3>
-				<p>HTMLコーディングだけでなく、jQuery</p>
-				<p>を使った動きのあるページ制作、Word</p>
-				<p>pressテーマ形式でのご納品も無料で対</p>
-				<p>応いたします。</p>
-			</div>
-			<div class="wow fadeInLeft about-feature">
-				<img src="img/f3.jpg">
-				<h3>SEO対策済みで納品</h3>
-				<p>SEOに強い「セマンティックコーディング</p>
-				<p>などのSEO対策を施した状態で納品致</p>
-				<p>しますので、納品後すぐに運用いただけま</p>
-				<p>す。</p>
-			</div>
-			<button class="wow fadeIn">FASTCODINGの特長<span>></span></button>
-			</section>
+				<div class="col-md-4 col-sm-4 wow fadeInLeft about-feature">
+					<img src="img/f1.jpg">
+					<h3>基本料金/CSS代 一切不要</h3>
+					<p>基本料金やCSSの代金はページ料金の中</p>
+					<p>に含まれているため、別途いただく必要は</p>
+					<p>ありません。シンプルでわかりやすい価格</p>
+					<p>設定です。</p>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInLeft about-feature">
+					<img src="img/f2.jpg">
+					<h3>jQuery, WordPress 標準対応</h3>
+					<p>HTMLコーディングだけでなく、jQuery</p>
+					<p>を使った動きのあるページ制作、Word</p>
+					<p>pressテーマ形式でのご納品も無料で対</p>
+					<p>応いたします。</p>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInLeft about-feature">
+					<img src="img/f3.jpg">
+					<h3>SEO対策済みで納品</h3>
+					<p>SEOに強い「セマンティックコーディング</p>
+					<p>などのSEO対策を施した状態で納品致</p>
+					<p>しますので、納品後すぐに運用いただけま</p>
+					<p>す。</p>
+				</div>
+				<button class="wow fadeIn">FASTCODINGの特長<span>></span></button>
+				</section>
 
-										<!-- OUR PROJECTS SECTION -->
-			<section class="wow fadeInRight our-projects">
+							<section class="wow fadeInRight our-projects">
 			<div class="wrapper">
 				<h2>OUR PROJECTS</h2>
 				<p>2015年4月にサービスを開始してから、今までにご依頼を受けたお客様・プロジェクト数の合計です。</p>
 				<p>実際に制作させていただいたwebサイトもご紹介しますので参考にしてください。</p>
 				<br>
-				<div class="project-feature">
+				<div class="col-md-4 col-sm-4 project-feature">
 					<div class="img1"></div>
 					<div class="text"><p>クライアント様</p><h2>9999<small>社</small></h2></div>
 				</div>
-				<div class="project-feature">
+				<div class="col-md-4 col-sm-4 project-feature">
 					<div class="img2"></div>
 					<div class="text"><p>合計プロジェクト数</p><h2>9999<small>社</small></h2></div>
 				</div>
-				<div class="project-feature">
+				<div class="col-md-4 col-sm-4 project-feature">
 					<div class="img3"></div>
 					<div class="text"><p>合計コーディング枚数</p><h2>9999<small>社</small></h2></div>
 				</div>
@@ -357,20 +359,8 @@ WordPress</p>
 				<button class="wow fadeIn">制作実績をもっと見る<span>></span></button>
 			</div>
 			</section>
-			</div>
 
-										<!-- CONTACT SECTION -->
-			<section class="wow fadeIn contact-us" id="6">
-				<div class="wrapper">
-					<h2>CONTACT US</h2>
-					<p>FASTCODINGのサービスは、「基本料金」・「CSS作成費」、</p>
-					<p>更には「jQuery」・「WordPress導入」のオプション費用について一切料金がかかりません。</p>
-					<p>サービス料金は1ページ一律8,000円のシンプルな料金で提供いたします。</p>
-					<button class="wow fadeIn">制作実績をもっと見る<span>></span></button>
-					<button class="wow fadeIn">制作実績をもっと見る<span>></span></button>
-				</div>
-			</section>
-										<!-- CUSTOMER'S VOICE SECTION -->
+													<!-- CUSTOMER'S VOICE SECTION -->
 			<section class="wow fadeIn customer-voice" id="3">
 
 				<div class="wrapper">
@@ -398,7 +388,7 @@ WordPress</p>
 					<button class="wow fadeIn">お客さまの声をもっと見る<span>></span></button>
 				</div>
 			</section>
-										<!-- HOW TO REQUEST -->
+													<!-- HOW TO REQUEST -->
 			<section class=" wow fadeIn how-request" id="4">
 				<h2>HOW TO REQUEST</h2>
 				<br>
@@ -407,41 +397,115 @@ WordPress</p>
 				<p>お見積りフォームから問い合わせいただければ、詳細な納期をご連絡いたします。</p>
 				<br>
 				<p>他にも現場状況などにもよりますが、特急料金でのご依頼も承っております。</p>
-				<div class="wrapper">
+				<br>
+				<br>
+				<!-- request process-->
 					<div class="wow fadeIn request-process">
-						<div class="process-text a">
+						
+						<img class="img-responsive" src="./img/request-md.png">
+						
+						<div class="row">
+						<div class="process-text col-md-2 col-sm-2 margin-top">
 							<p>まずは、お気軽にお見積り</p>
 							<p>フォームよりご連絡くださ</p>
 							<p>い。スケジュールや金額を</p>
 							<p>お見積りのうえメールを返</p>
 							<p>信いたします。</p>
 						</div>
-						<div class="process-text b">
+						<div class="process-text col-md-2 col-sm-2">
 							<p>デザインデータ(Photo</p>
 							<p>shop/Illustrator/</p>
 							<p>Fireworks)と当社フォー</p>
 							<p>マットのコーディング指示</p>
 							<p>書をご入稿いただきます。</p>
 						</div>
-						<div class="process-text c">
+						<div class="process-text col-md-2 col-sm-2 margin-top">
 							<p>FASTCODINGベトナム</p>
 							<p>オフィスでHTMLコーディ</p>
 							<p>ングを行ないます。</p>
 						</div>
-						<div class="process-text d">
+						<div class="process-text col-md-2 col-sm-2">
 							<p>日本人ディレクターによる</p>
 							<p>厳正なチェックの後、当社</p>
 							<p>サーバにて見栄えをご確</p>
 							<p>認いただきます。</p>
 						</div>
-						<div class="process-text e">
+						<div class="process-text col-md-2 col-sm-2 margin-top">
 							<p>完成したHTMLファイル</p>
 							<p>をzip圧縮で納品いたしま</p>
 							<p>す。本番サーバへのアップ</p>
 							<p>ロードも承ることが可能で</p>
 							<p>す。</p>
 						</div>
+						</div>
 					</div>
+
+					<div class="request-process-sm">
+						<div class="row">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="./img/request-process-sm1.png">
+							</div>
+							<div class="col-xs-6">
+							<br>
+								<p>まずは、お気軽にお見積り</p>
+								<p>フォームよりご連絡くださ</p>
+								<p>い。スケジュールや金額を</p>
+								<p>お見積りのうえメールを返</p>
+								<p>信いたします。</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="./img/request-process-sm2.png">
+							</div>
+							<div class="col-xs-6">
+							<br>
+								<p>デザインデータ(Photo</p>
+								<p>shop/Illustrator/</p>
+								<p>Fireworks)と当社フォー</p>
+								<p>マットのコーディング指示</p>
+								<p>書をご入稿いただきます。</p>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="./img/request-process-sm3.png">
+							</div>
+							<div class="col-xs-6">
+							<br>
+								<p>FASTCODINGベトナム</p>
+								<p>オフィスでHTMLコーディ</p>
+								<p>ングを行ないます。</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="./img/request-process-sm4.png">
+							</div>
+							<div class="col-xs-6">
+								<br>
+								<p>日本人ディレクターによる</p>
+								<p>厳正なチェックの後、当社</p>
+								<p>サーバにて見栄えをご確</p>
+								<p>認いただきます。</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="./img/request-process-sm5.png">
+							</div>
+							<div class="col-xs-6">
+							<br>
+								<p>完成したHTMLファイル</p>
+								<p>をzip圧縮で納品いたしま</p>
+								<p>す。本番サーバへのアップ</p>
+								<p>ロードも承ることが可能で</p>
+								<p>す。</p>
+							</div>
+						</div>
+					</div>
+				<!-- end request process-->
+
 					<button>依頼方法を詳しく見る<span>></span></button>
 					<hr>
 					<br>
@@ -451,22 +515,18 @@ WordPress</p>
 					<p>無料で追加できる動き(jQuery)のサンプルもご用意しました。</p>
 					<button class="a">サンプルサイトを見る<span>></span></button>
 					<button class="a">無料jQuery一覧を見る<span>></span></button>
-				</div>
 			</section>
-
-			<!-- CONTACT SECTION -->
+				<!-- CONTACT SECTION -->
 			<section class="wow fadeIn contact-us">
-				<div class="wrapper">
 					<h2>CONTACT US</h2>
 					<p>FASTCODINGのサービスは、「基本料金」・「CSS作成費」、</p>
 					<p>更には「jQuery」・「WordPress導入」のオプション費用について一切料金がかかりません。</p>
 					<p>サービス料金は1ページ一律8,000円のシンプルな料金で提供いたします。</p>
-					<button>お問い合せ<span>></span></button>
-					<button>無料お見積り<span>></span></button>
-				</div>
-			</section>
 
-			<!-- OUR SERVICE SECTION -->
+					<button class="a">サンプルサイトを見る<span>></span></button>
+					<button class="a">無料jQuery一覧を見る<span>></span></button>
+			</section>
+								<!-- OUR SERVICE SECTION -->
 			<section class="wow fadeIn our-service" id="2">
 				<div class="wrapper">
 					<h2>OUR SERVICE</h2>
@@ -488,14 +548,13 @@ WordPress</p>
 				<!--JQUERY SLIDER-->
 			</section>
 
-			<!-- COMPANY INFORMATION -->
+						<!-- COMPANY INFORMATION -->
 			<section class="company-information">
-				<div class="wrapper">
 					<h2>COMPANY INFORMATION</h2>
 					<br>
 					<p>HTMLコーディングでお困りのこと・ご質問などいつでもご連絡ください。</p>
 
-						<div class="map-info map-info-border">
+						<div class="col-md-6 col-sm-6 map-info map-info-border">
 							<h4>FASTCODING <span>東京オフィス</span></h4>
 							<div class="google-map">
 								<div class="my-googleMap">
@@ -508,7 +567,7 @@ WordPress</p>
 03-6262-5384</div>	
 						</div>
 					
-					<div class="map-info">
+					<div class="col-md-6 col-sm-6 map-info">
 						<h4>FASTCODING <span>東京オフィス</span></h4>
 						<div class="google-map">
 							<div class="my-googleMap">
@@ -525,48 +584,22 @@ WordPress</p>
 					<div class="contact-info">
 						<div class="fast-coding">
 							<div class="icon"></div>
-							<br>
-							<br>
-						
-							<p>東京オフィス   〒110-0015　東京都台東区東上野2-18-7 共同ビル3F</p>
-							<p style="padding-left: 92px">03-6262-5384　info@fastcoding.jp</p>
-							<p>大阪オフィス  〒541-0044　大阪市中央区伏見町4-4-9 OX淀屋橋ビル3F</p>
-							<p style="padding-left: 92px">06-7878-8160　info@fastcoding.jp</p>
-						</div>
-						<div class="site-map">
-							<p><strong>SITE MAP</strong></p><br>
-							<div class="col1">
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>特長</p>
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>価格と納期</p>
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>納品までの流れ</p>
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>実績</p>
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>お客様の声</p>
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>よくある質問</p>
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>お問い合わせ</p>
-						<p><i class="fa fa-angle-right" aria-hidden="true"></i>お見積りフォーム</p>
-
-							</div>
-							<div class="col2">
-								<p><i class="fa fa-angle-right" aria-hidden="true"></i>会社概要</p>
-								<p><i class="fa fa-angle-right" aria-hidden="true"></i>私たちの理念</p>
-								<p><i class="fa fa-angle-right" aria-hidden="true"></i>大坂オフィスのご紹介</p>
-								<p><i class="fa fa-angle-right" aria-hidden="true"></i>新着情報</p>
-								<p><i class="fa fa-angle-right" aria-hidden="true"></i>利用規約</p>
-								<p><i class="fa fa-angle-right" aria-hidden="true"></i>プライバシーポリシー</p>
-							</div>
 						</div>
 					</div>
-				</div>
+
+
 			</section>
+
+			</div>
+		</div>
 	</div>
 
-	<!--=========================== END MAIN CONTAINT ==============================-->
 	<footer>
 		<p>Copyright(C) 2016 FASTCODING,inc</p>
 		<a href="#0"><div class="top-back"></div></a>
 	</footer>
-</div>
 
+<script src="js/bootstrap.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
 <script src="js/scripts.js"></script>
 
